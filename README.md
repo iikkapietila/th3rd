@@ -12,6 +12,7 @@ moderngl_window -folder
 Glsl-files are found in both folders, this is because I held different versions for development and .exe bundling. You can use this project as a basis for your own experiments, for instance intro or demo project. Just replace the glsl-files with your own shaders and include your own music. Bundle the project into a single executable with e.g. pyinstaller.
 
 Make sure to define paths correctly on lines 41-43:
+
 #os.chdir(sys._MEIPASS) <--- this is needed when bundling to exe as this refers to the temp folder in which the resources are found
 
 #use_path = 'moderngl_window\\scene\\programs\\' <--- alternative folder for using different resource files for bundling the exe
